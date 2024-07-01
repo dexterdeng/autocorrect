@@ -14,6 +14,9 @@ Gem::Specification.new do |s|
   s.license = "MIT"
   s.extensions = ["ext/autocorrect/extconf.rb"]
 
+  s.required_ruby_version = ">= 2.7.0"
+  s.add_dependency "railties", ">= 3.2"
+
   # needed until rubygems supports Rust support is out of beta
   s.add_dependency "rb_sys", ">= 0.9.54"
 end
